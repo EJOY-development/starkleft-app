@@ -1,0 +1,16 @@
+.troop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 150px;
+  margin: 0 20px;
+  border-radius: 15px;
+  // background-color: rgb(0, 0, 0);
+  border: 2px solid gray;
+
+  &:hover {
+    border: 2px solid rgb(120, 182, 136);
+    background-color: rgb(163, 233, 163);
+  }
+}

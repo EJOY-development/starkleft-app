@@ -1,0 +1,78 @@
+.home.page {
+  padding: 30px;
+  flex-direction: column;
+
+  .title {
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  .online-users {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    .online-user {
+      display: flex;
+      height: 30px;
+      align-items: center;
+      border-bottom: 1px solid gray;
+
+      .username {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        border-right: 1px solid gray;
+        height: 100%;
+      }
+
+      .status {
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .find-game-status {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    .elapsed-time {
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: rgb(82, 131, 82);
+    }
+
+    .find-game {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgb(212, 243, 218);
+      width: 180px;
+      height: 60px;
+      font-size: 22px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(154, 240, 166);
+        border: 2px solid rgb(76, 255, 112);
+      }
+    }
+  }
+
+  button.logout {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    padding: 5px 12px;
+  }
+}
